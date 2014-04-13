@@ -42,6 +42,7 @@ public class ContentRunnable implements Runnable {
 				map.put("link", this.link);
 				map.put("published_date", this.publishedDate);
 				map.put("content", content);
+				map.put("sourceName", sourceName);
 				
 				MongoUtil.insert("article", map);
 				
